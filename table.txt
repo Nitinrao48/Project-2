@@ -1,0 +1,135 @@
+create table fruits (
+id int not null,
+name char(10) not null,
+last_name char(10) not null,
+purchase_date date not null
+);
+
+CREATE TABLE emp (
+emp_name varchar(10) NOT NULL,
+emp_lname varchar(10) NOT NULL,
+emp_mname varchar(10) DEFAULT NULL,
+emp_email varchar(20) DEFAULT NULL,
+emp_phone varchar(15) NOT NULL,
+enrollment_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+selected_course int(11) NOT NULL,
+years_of_exp int(11) NOT NULL,
+emp_company varchar(30) DEFAULT NULL,
+batch_date varchar(30) NOT NULL,
+source_of_joining varchar(30) NOT NULL,
+location varchar(10) NOT NULL,
+id int(11) NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (id),
+UNIQUE KEY (emp_email)
+);
+
+
+change column name with the help of rename
+===========================================
+
+ALTER TABLE table_name   
+RENAME COLUMN old_column_name TO new_column_name; 
+
+Ex:
+
+ ALTER TABLE customer RENAME COLUMN account to account_no;
+
+change column name with the help of change 
+===========================================
+
+ALTER TABLE table_name   
+CHANGE COLUMN old_column_name new_column_name Data Type;  
+
+creating index on existing table
+=====================================
+
+CREATE INDEX [index_name] ON [table_name] (column names)  
+
+for example:- put index on student table
+
+create index ind_1 on student(student_fname);
+so here new index will create and apply on student_fname.
+
+creating INDEX while creating a table
+======================================
+
+CREATE TABLE t_index(  
+   col1 INT PRIMARY KEY,  
+   col2 INT NOT NULL,  
+   col3 INT NOT NULL,  
+   col4 VARCHAR(20),  
+   INDEX (col2,col3)   
+); 
+
+If you want to show the indexes of a table, execute the following statement
+=============================================================================
+
+SHOW INDEXES FROM student;
+
+
+==============================================================================
+
+
+GROUP_CONCAT() Function
+========================
+
+The GROUP_CONCAT() function returns the concatenated string from multiple rows into a single string.
+
+for ex: 
+Suppose we have another employee table as below:
+
+
+ SELECT emp_id, emp_fname, emp_lname, dept_id,     
+GROUP_CONCAT(designation) as "designation" FROM employee group by emp_id;   
+
+===============================================================================
+
+LAST() Function
+=================
+
+This function returns the last value of the specified column. To get the last value of the column,
+we must have to use the ORDER BY and LIMIT clause. It is because the LAST() function only supports in MS Access.
+
+Suppose we want to get the last working hour of an employee available in the table, we need to use the following query:
+
+mysql> SELECT working_hours FROM employee ORDER BY name DESC LIMIT 1; 
+
+=========================================================================
+
+FIRST() Function
+===================
+
+This function returns the first value of the specified column. To get the first value of the column, we must have to use the LIMIT clause. It is because FIRST() function only supports in MS Access.
+
+Suppose we want to get the first working date of an employee available in the table, we need to use the following query:
+
+mysql> SELECT working_date FROM employee LIMIT 1;   
+
+==========================================================================
+
+CREATING TABLE WITH COPY FROM EXISTINGN TABLE 
+=============================================
+
+create table student_new select * from student;
+
+This will help us to create a new table with same content of student table in student_new table.
+
+============================================================================
+
+TO CREATE A BACKUP FOLDER OF EXISTING TABLE
+===========================================
+
+create table new_backup as select * from new;
+
+This will create a new_backup table and copy all data and architecture of table from table new.
+
+ 
+What is an array
+================
+
+An array is a data structure that holds the collection of elements having the same data type.
+
+String
+=======
+
+on the other hand string is a collection of characters.
