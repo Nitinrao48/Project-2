@@ -1,0 +1,75 @@
+Stroage are categorize in couple of types in AWS. Some of describe below
+
+AWS Storage
+* Simple storage service so called S3 also.
+* Elastic file storage.
+* Elastic block storage.
+* Glacier now it is called S3 also.
+* Snowball.
+
+->Snowball is a physical kind of stroge primarily used to migrate physical data to over the cloud.
+ Lets undertand with taking a example: If we have a one physical production server in our premise and now we want to store
+ it on cloud machine. so we will generate a request for data migration snowball storage from AWS team they will send it
+ via courier and once our data will copy into it then we will send it back to their location and their team then trasnfer
+ this data on cloud machines.
+ And after all this our data will available on cloud we can acess it after a schedule time.
+
+->Glacicer : Its is a very cheap kind of storage that is now called S3 glacier it cost us very minimal if we opt this
+  Here we mainly store the data that is rarely need us .Like once in a while because its access speed is slow as compare
+  to other stroage available in AWS.
+
+->Elastic block storage (EBS): It is so called storage that attached with server/node/or EC2 Machines . No body can access
+  it without start or login the EC2 machine becuase its in block form and attached with server .so every time whenever
+  want to access the storage or data we must need to login in instance machine first.
+->Elastic File storage (EFS) : This is used to store the structured type of data and mainly used to store the data in file
+  format . And always support only linux machines data. It stores like file configuration, new patches and more.
+->Simple storage service (S3): As name implies simple storage service is the main storage offered and comes under AWS. This
+  standard storage. it is also used to store the main data. Like if we want to host our website so we can store our code
+  or data in this storage to access the website here accessing storage charges are minimal so either we can use it as
+  website or app hosting .Keep it in mind that we can not deploy the OS operating system in this storage. only data in 
+  bulk form we can store it as it is. Like data structured or unstructured graph any kind of form. that why it is so called
+  standard storage offered by AWS.
+  Here can store any data type format either file, In graph form, big block type and lot more.
+
+Furtheremore, Categorization of new AWS storage
+1 AWS S3 Simple storage service
+2 AWS S3 Glacier deep archival
+3 AWS S3 Glacier
+4 AWS S3 IA (Infrequent Access)
+5 AWS S3 one-zone (IA)
+6 AWS S3 Intelligent Access
+
+The aforesaid all are new storage services offered by AWS nowdays. They are more defined below.
+
+->FEATURES OF S3
+  * Store KB to TB of data in one run. Accessing or retreiving of data here is much easier and convenient via http or https
+  * Data storage More than 5GB will be store in form of block. We dont need to worry AWS own do this logically.
+  * Data redundancy here in form of ZONE like storage store at 3 zones 
+  * Availability of data 99.9% (SLA).
+  * Data is constlier to store here .Retreiving data cost is cheaper
+
+-->FEATURES OF AWS S3
+  It store the data of any type of.
+  Store the data in small chunks that will represent in S3 bucket in form of main block storage.
+  Retriving of data is very fast and cheap but storing of data is costly as compared to other storage services offered by AWS.
+-->FEATURES OF AWS Glacier
+   It is the cheapest storage offered by AWS
+   store the data that would need rarely.
+   This is widely used in data storing companies like sony,T-series to storing their songs recording that rarely needed by them like once in a while.   
+-->FEATURES OF AWS Glacier Deep Archival
+   It is another storage service working in same module like glacier.
+   It is more often needed when need to hide or archive the data.
+   It store the data in deep archive method always.
+-->FEATURES OF AWS IA Infrequent Access
+   That is widely used to when data not required daily or frequently
+   Data when needed once or twice in a month that stored in S3 IA infrequent Access    
+   It is comparitevely cheaper to standard S3 but data retreiving is costly in this storage.
+   This is gud when data not frequently required 
+-->FEATURES OF AWS one-zone IA
+   This storage is widely famous and used to store the data at single location or in one zone.
+   This is used to those who have their setup in data center and for replication stored at this storage for wider range.
+   Its provide the data redundancy or SLA 99.5%
+-->FEATURES OF AWS S3 intelligent access
+   This storage is automatically store the data in between S3 to IA storage according to the user need and working style.
+   Its also called Intelligent sensing for our storage.
+   THis is mainly used by vaourios e-commerce paltform companies to use it once needed it can handle by own without user intereption or manually interact.   
