@@ -1,0 +1,636 @@
+
+STARTING WITH LINUX
+=========  ===========
+
+LINUX: Linux is a kernel(work in between hardware and OS) work as operating system also. developed in 
+       1969 at bell laboratories by dennis ritchie & ken thompson.
+
+UNIX- TYPES
+-----------
+|- IBM AIX
+|- SUN SOLARIS
+|- MAC-OS
+|- HP-UX
+|- LINUX
+|- FLAVOUR OF LINUX --|- RHEL
+                      |- FEDORA
+                      |- DEBIAN
+                      |- UBUNTU
+                      |- CENTOS
+                      |- OTHERS --|- AMAZON LINUX
+                                  |- KALI LINUX -- Especially used by hackers with their Add-on features
+
+                   OS(OPERATING SYSTEM)
+                          |
+                    ---------------
+                   |              |
+                  CLI           GUI(GRAPHICAL USER INTERFACE) -- LIKE WINDOWS
+       (COMMAND LINE INTERFACE)
+                   |
+ EXAMPLES LIKE LINUX AND OTHER ITS FLAVOURS
+
+UNIX: UNICS: Uniplesed information & computing services.
+
+* Linux is kernel not OS
+* It is not a UNIX derivative.it is different & wass wirtten from scratch.
+* Linx distribution is the linux kernel and a collection of softwares that together create an OS.
+
+FEATURES OF LINUX
+==================
+
+* It is open source(Available for everyone without any cost).
+* It is secure as compare to other OS like windwos.
+* It is light weight (Means do not required much space for installation like we need in windows OS)
+* It is multiuser & multitasking operating system.
+* Simplified updated for all installed softwares.
+* Multiple distribution avalability -REDHAT, DEBIAN, FEDORA.
+
+DIRECTORIES IN LINUX
+=====================
+
+* /Forward : Forward directory is a root directory denoted by a single forward slash (/). It is the
+             upper most directory in the linux directory structure. It contains all the directories,
+             sub- directories, and files on your linux system. its from the root directory where the
+             linux hierarchy starts. The root directory (/) should not be confused with the root 
+             home directory (/root).
+
+1 /Home : Home directory of other users not root users.It contains user personal files & folders.
+          On graphical linux systems ,the home directory, by default, contains folders such as
+          Desktop,documents, Downloads, pictures,Videos and public.In addition, the /home directory 
+          contains personal configuration files which are prefixed with a dot (.). 
+          These are hidden files that contain user-specific settings for the login shell session.
+
+2 /root : Home directory for root users or admin user.The /root directory is the home directory for 
+          the root user, which is also referred to as the root user’s home directory 
+          (and not as the root (/) directory).
+          The root account also referred to as the superuser, administrative user, system administrator
+          or just the root user has all the access to commands and system files in Linux.
+
+3 /boot : Contains bootable files for linux that helps system to boot the device properly
+          it basically checks POST (power on self test) process. Checks everey hardware of the
+          device on self test mode if anything found not appropriate helps to power ON device.
+          intimated by POP-UP notification. The boot directory contains Linux boot files such 
+          as the bootloader, the kernel, and its associated files. Files such as ‘vmlinuz‘ 
+          represent the compressed image of the Linux kernel.
+
+4 /etc : Contains all configration files device all hardware information all services ,scripts
+         are stored here. This directory works like nerve centre of the linux system.
+
+5 /usr : By default other Software are installed in this memory.The /usr directory ranks as one of the most 
+         important directories due to the enormous amount of data it holds. The directory contains 
+         system-wide read-only files. These include libraries, user binaries and their documentation, 
+         programs, and system utilities.
+
+6 /bin : (Binary executable programs & common system commands) contains command used by all users.
+         These include ls, pwd, cat, mkdir, cd, mv, cp, du,df, tar, rpm, wc, history, etc.
+
+7 /sbin : (System Binary) All root user commmands are contnains in this directory.The /sbin directory 
+          contains executable files, utilities, and system commands that are reserved for the root user 
+          or a user with root privileges. Such commands include halt, reboot, mkfs, fsck, fdisk, halt, 
+          iptables, ifconfig, ip, swapon, etc.
+
+8 /opt : Optional directory reserved for add-on packages and third party software applications that are
+         not included by default in the system official reposiroty.
+         like when we install applications such as Skype, Discord, Spotify, and Java, G-chrome, to mention
+         a few,they get stored in the /opt directory.
+
+9 /Dev : Essential devices files or specical files that are attached to the system include terminal 
+         devices like USB, Pointer, Printer (So called all peripheral devices).
+
+10 /Var : The /var directory stores system-generated variable files, which include log files, caches, and 
+          spool files.
+
+11 /Proc : The /proc directory is somewhat of a strange directory. It is a virtual or pseudo filesystem 
+           that contains vital information about running processes. It is considered the control and 
+           information center for the Linux kernel. The filesystem is created on the fly upon system 
+           startup and is destroyed once the system is powered off.
+
+12 /mnt : This directory & its sub-directories intented to used as temporary  mount point for mounting 
+          storage device for example :Hard disk drives, USB drives, and CDROMs.
+
+13 /sys : The /sys is a virtual file system that contains a set of virtual files that provide an interface 
+          to the Linux kernel.
+
+14 /media : The /media directory is a directory where the system mounts removable media such as USB drives.
+
+15 /run : The /run directory is a temporary filesystem that contains volatile runtime data that shows the 
+          system has since it was booted. Files under the /run directory must be deleted 
+          (removed or truncated as convenient) at the start of the boot process.
+
+16 /tmp : The /tmp directory is a directory that stores temporary files and many programs use this 
+          directory to create lock files and keep the temporary storage of data. Do not delete files under 
+          the/tmp directory unless you know exactly what you we doing. Many of these files are critical 
+          for presently running programs and removing them may affect a system crash.
+
+17 /lib : The /lib directory stores all the essential standard libraries required by user binaries in the
+          /bin directory.
+
+18 /src : The /srv directory is the service directory and is abbreviated as ‘srv‘. This directory contains 
+          server-specific and service-related files.
+
+19 /lost+found : The lost+found directory is installed during the installation of Linux, useful for 
+		 recovering files that may be broken due to unexpected shut-down.
+
+In addition to the major directories, here is a list of some of the prominent files and directories and their uses:
+===================================================================================================================
+
+
+/boot/vmlinuz : The Linux Kernel file.
+/dev/hda : Device file for the first IDE HDD (Hard Disk Drive).
+/dev/hdc : Device file for the IDE Cdrom, commonly.
+/dev/sda: Device file for the first SATA Drive (Hard Disk Drive).
+/dev/null : A pseudo-device, that doesn’t exist. Sometimes garbage output is redirected to /dev/null, so that it gets lost, forever.
+/etc/bashrc : This file contains system-wide defaults, functions, and aliases among other files that are used by all the system users.
+/etc/crontab : This is a system-wide file that is uniquely formatted to schedule or automate system tasks on a Linux system.
+/etc/exports : A file that determines which file systems are exported to remote hosts and specifies options.
+/etc/fstab : This is a special file that contains information about all avaiable mount points and mount point options. Each line in 
+             this file provides six options, each of which denotes information about a mount point or filesystem.
+/etc/hosts : This is a configuration file that maps system hostnames to their corresponding IP addresses.
+/etc/hosts.allow : The file specifies which hosts are permitted to connect to the local system.
+/etc/host.deny : The file specifies which hosts are denied access and services on the local machine.
+/etc/issue : Contains a pre-login message.
+/etc/modules : This file contains the names of kernel modules that should be loaded at boot time, one per line.
+/etc/motd : motd stands for a message of the day, the message users get upon login.
+/etc/mtab : A read-only file that contains a list of currently mounted filesystems.
+/etc/passwd : A file that contains the system user’s information such as the username, UID, GID, and login shell among others
+/etc/printcap : Contains printer information that is generated by the /etc/cups/printers.conf file.
+/etc/profile : Contains Linux system-wide environment and other startup scripts.
+/etc/profile.d : Application script, executed after login.
+/etc/rc.d : Information about run level specific script.
+/etc/rc.d/init.d : Run Level Initialisation Script.
+/etc/resolv.conf : This is a DNS resolver file. It specifies how the system leverages DNS to resolve hostnames.
+/etc/security : Contains configuration files for various PAM modules.
+/etc/skel : This is a directory that contains a set of user configuration files that are copied to the user’s home directory when a user is created.
+/etc/X11 : This is a directory that contains configuration files for the X-window System.
+/usr/bin : Normal user executable commands.
+/usr/bin/X11 : This directory contains infinitely nested directories and binaries for the X Windows System.
+/usr/include : The directory contains header files for C compilers. This includes stdio.h, stdlib.h, and string.h among others.
+/usr/share : Shared directories of man files, info files, etc.
+/usr/lib : This directory consists of object files and directories
+/usr/sbin : The directory contains binaries with superuser privileges or for System Administration.
+/proc/cpuinfo : The file contains system info including CPU model, model name, number of cores, and clock speed to mention a few files.
+/proc/interrupts : Information about the current interrupts being utilized currently.
+/proc/ioports : The file contains all the Input/Output addresses used by devices on the server.
+/proc/meminfo : A file that stores memory usage information including swap information.
+/proc/modules : A file that lists all the modules being used by the kernel
+/proc/mount : The file contains detailed mounted file-system information.
+/proc/stat : The file contains detailed information about the system and kernel activity.
+/proc/swaps : The file contains information about the swap file.
+/proc/version : The file contains Linux version information.
+/var/log/lastlog : A binary file that contains information about the last successful user logins.
+/var/log/messages : The file contains a log of messages produced by the syslog daemon at boot.
+/var/log/syslog : A file that contains non-critical system logs.
+/var/log/wtmp : A file listing the login time and duration of each user on the system currently.
+
+
+LOGIN PROCEDURE IN AMAZON LINUX
+================================
+
+steps are as follows:
+
+* Register with email id on AWS console.
+* Create EC2 Instance machine(server).
+* Download putty Gen to generate private key
+* Copy the EC2 public IP and enter it into putty
+* Tap on SSH-Auth-Credentials-browse & upload the PPM machine key
+* We will redirect on the AWs
+* Start machine EC2 on AWS
+* Go to putty paste the IP
+
+
+LINUX COMMANDS AND ITS USE CASES
+================================
+
+CAT COMMAND : The cat command is one of the most universal tools, yet all it does is copy standard input
+-----------   to standard output.
+	Cat create file : Used to create single file
+	cat concatenate file : To add more than one file into a single file
+	cat copy files: To copy the content of X into Y file.
+	tac : To see the cocntent of file from bottom to top approach.
+
+* login as ec2-user
+  [ec2-user@ip]$ sudo su  
+
+	Sudo defines (super user do switch user) to become a root user we used sudo su
+        $ represent Simple User     
+               
+* [root@ip]# cat >file1 
+
+       Here cat used to create a file (i.e file1)
+       # Represent Now Root User
+       > Used for file creation and same time allow edit option to write in a file1
+       we write 'Hello World' 
+
+* cat >>file1 -Now double >> allow edit option in file1 (ctrl+D) for exit.
+	"Namaste"
+	(Ctrl+D)
+
+* cat file1 - This will show the whole file1 content of it.
+
+	It will show "Hello World"
+		And   "Namaste"	
+		(Ctrl+D -for exit)
+	>>Dual indication mark only allow to add more lines or data. Can not use to delete previous data.
+
+* cat >file2 
+	"Thank You"
+	 Ctrl+D (To exit)
+
+* cat file1 file2 >All
+	Here data of file1 & file2 will copy on new created file All
+	Can see the data with the use of "cat all"
+	It will show "Hello World"
+	             "Namaste"
+	             "Thank you"
+
+TOUCH COMMAND
+--------------
+* Basically used to create a empty file
+* Create multiple empty files
+* Change all timstamp of a file
+* Update only access time of a file, also can modify time of file.
+
+	#touch file1
+	#ls
+Output would be - file1
+
+	#touch file1 file2 file3 file4 (Here multiple file created in one go)
+	#ls
+Output would be - file1 file2 file3 file4
+
+	#touch file2
+	#touch -a file3
+	#touch -m file4
+
+TIMESTAMP - A timestamp is useful because it keeps records of when a file was accessed, modified,
+---------   or added. Linux's files have 3 timestamps recorded by the computer
+
+* touch -a : atime Access time(Last time when a file was access).
+* touch -m : mtime Modify time (Last time when a file was modified).
+* touch -u : ctime change time (Last time when file metadata was changed)
+* stat filename : This will represent all timestamp of file like access, modify & change time.
+
+mtime: ls -l test.txt   (Modify time)
+ctime: ls -cl test.txt  (change time)
+atime: ls -ul test.txt  (Access time)
+
+VI & VIM EDITOR IN LINUX  : Vi editor is a powerful and widely used text editor in UNIX and Linux 
+=========================   operating system. It allows us to create, edit and manage text files. 
+                            Vim is the advanced version of vi editor. There are three modes in vi:
+                            Command mode, Last Line Mode and Insert Mode.
+
+* A program text editor
+* It can be used to edit all kind of plain text, speciallyh useful for editing programs mainly used 
+  used for unix programs.
+
+Note: :W - To save
+      :wq or :X - To saave & Quit.
+      :Q - Quit
+      :Q! - Force Quit, NO save here.
+
+* Vi is standard whereas 'nano' has to be available depending on the linux we use.
+	# vi file1 (Press I to insert editor cursor)
+	# "hello & welcome"   (press Esc to exit)
+	:wq  (Quit from Vi editor)  
+	#ls
+	output would be :- File 1
+	#cat file1
+	output : Hello & welcome
+
+NANO COMMAND IN LINUX : It is also used to create and edit of a file, as it is also called editor
+----------------------  
+
+	# Nano file1 (file creation here)
+	# 'Hello'
+	  'Namaste'  (It consist content of file)
+	Ctrl+X - Y (Y to save the content)
+	# ls  (to list the file)
+	# Renter content in file1, then 
+	# Nano file1
+	  'Hello'
+	  'Namaste'
+	  'thank you'
+	Ctrl+O (Content overload here)
+	Ctrl+X- Y (To save and exit)
+
+Note : Cat & touch mainly used for file creation and Vi,Vim,nano used as file editor.
+
+HOW TO CREATE A FILE OR DIRECTORY IN LINUX
+-------------------------------------------
+
+* Sudo su :(To convert general user into admin user)
+* cat file1: To display the content of a file1
+* less file1: Shows the contents of the file1
+	* what is the advantage of using less command
+	can easily read big files
+	Forward and backcward search is easy
+	Navigation from top to bottom nis easy
+
+* more file1: Shows the contents of the file1
+* shutdown -r +5 : Here system will (r)restart after (+5) five minutes as indicated. and shutdown in specific time will be notified.
+* shutdown -c: To cancel the shutdown used (c).
+* shutdown -h 22:00 : Here system shall not be available after 10AM as timer set in the shutdown command.
+* Mkdir Dir1 : (Use mkdir To create a directory or folder) ex: Dir1 created here.
+* mkdir -p dir1/dir2/dir3 : Here multiple directories created within a single directory                          
+* Ls : List the all files and directory.
+	* ls -a : It will how -a all files that are even hidden too.
+	* ll : List the names of the files in the current directory along with the 
+	       permissions, date, time and size
+	* LL : This is used to represent all created files history.(List of history).
+	* Ls -La : Used to show all file & directories even hidden also.
+	* Ls -L : Used to show the all files or folders.
+	* Ls -LL: Its work likewise same as Ls -La.
+  	  Represent like: |d|rwx|r_x|r_ _|
+	* getfacl file_name (To represent file, user, group details)
+	* ls -li : Inode is an index node. It serves as a unique identifier for a specific piecec of metadata
+		   on a given filesystem.
+* Dir1 : Folder means directory in linux.
+* cd : change directory it will change the directory one to another.
+* Cd dir2 : Change directory. Here directory will change and will enter in dir2.
+* Cd .. : This will take back on previous directory(..) double dotted means one step back.
+* cd~ : Quick access/reference to your home directory.
+* pwd : It will show the present working directory or print working directory.
+	Type (pwd) then output would be
+	/home/ec2-user/dir1/dir2/dir3
+
+* cd ../../.. : This command directly take back us from dir3 to dir1
+		(3 steps back as we used double dots..three times).
+* touch file1 : Touch used to create empty file i.e. file1.
+* touch file1 file2 file3 file4 : Here four files created in a single shot.
+* touch.file1 : Here (.) used to to make hidden file.
+* mkdir.dir1 : Here a hidden directory created.
+* touch -a : atime Access time(Last time when a file was access).
+* touch -m : mtime Modify time (Last time when a file was modified).
+* touch -u : ctime change time (Last time when file metadata was changed)
+* stat filename : This will represent all timestamp of file like access, modify & change time.
+
+* cp file1 file2 : cp is used to copy (Here content of file1 copy in file2).
+   |	|     |	
+(copy)(source)(Destination)
+
+* mv  file1 dir1: Move to file1 into directory1.
+   |     |	|
+(Move) (File1) (Directory1)
+
+* Ctrl+D : To save the content in the file and exit.
+* Ctrl+L : To clcear the screen.
+* mv file1 myfile : (mv) used to move or renaming. 
+   |    |       |
+(Rename)(file1)(New name or file)
+ 	Here, The file1 renamed with myfile with copy of data.
+* mkdir dirx diry .dirz : Here dirz is hidden and rest two directories are shoews like 
+  			  other general directories.
+* rmdir : This command is used to remov the specified directory(mainly empty directory).
+* rmdir -p : Here remove both the parent & child directory.
+* rmdir -pv : Removes all he parent & subdirectories along with the verbase.
+* rm -rf : Removes even non empth file & directory so called forcefully deletion.
+* rm -rp : Rermoves non-empty directories including parent & subdirectory.
+* rm -r : Removes empty directories.
+* rm -rf dir2 : It will be forcefully deleted.
+* If (D) shows in permission block or list details at beginning that means it is a directory.
+* If (-) hyphen that means it is a file.
+* Hostname : It will show the flavour of linux. like RHEL,CENTOS,DEBIAN,UBUNTU.
+* Hostname -i: To show only IP.
+* Ifconfig: It will show IP address ,ethport, and interface card.
+* ip addr : This will also show the ip address of linux machine.
+* netstat -ie: It will work same like ifconfig show ethport,interface card.
+* cat /etc/os-release* : Star here used if dont now the absolute path.
+      |
+  (Top level root directory) It will show the OS name and path.
+
+YUM : Yellowdog updater modified. It is basically used to provide packages innstaall 
+----  In a GNeneral term , It allow user & administarator to easily install ,update,remove or search
+      software packages on a system.
+* Yum insaatll httpd -Y : httpd used to install apache server. Here yum used for installation & httpd
+                          is a apache package & (-Y) to provide consent yes to insatll.
+* yum remove httpd -y : To remove the httpd
+* yum update httpd -y : This will update all the files and packages.
+* service httpd start : To start the httpd service web server.
+* service httpd status : To show current status of serve active or inactive.
+* chkconfig httpd ON: It help to turn ON httpd service whenever we start our machine.
+* chkonfig httpd off: Turn of this service.
+* whoami : Use to show whether root or simple user.
+* which git,chef,tree: Use to show it is installed in the system or not.
+* yum list installed will show whatever software package we installed till the time.
+* echo "Hello" >file1 : Use to print or reflect the message.
+	echo "Thank you" >>file1 : Now both previous & current content add now & show
+	output: Hello
+		Thank you
+
+* yum insall tree -y : Here tree is installing to see all file & directories in tree hierarchy format. 
+* Tree : List all the directory in tree format .It is working same alike list.
+* Sort : Use to make content in ascecnding order of file likewise in a list way.
+	for example: Cat >>file1 
+		     S,A,R,T,L,M,O
+		     sort file1
+		     A,L,M,O,R,S,T
+* useradd nitin : Use to add user to access or give rights. (To check) cat /etc/passwd.
+* userdel -r nitin : Use this command to delete the user (-r) used to recursivev.It will delete all the data of nitin.
+* passwd -L nitin : Here L is used to lock the user nitin.
+* passwd -u nitin : Here (-u) used to unlock the nitin user.
+* chage -M 90 nitin : Here (M)defines the days for nitin user but this will not warn about password expiration in 90 days.
+* chage -W 3 nitin : Here (W) refers to warning 3 days before the expiry of password.
+* chage -L nitin : To check the details.
+* groupadd skan : To add new group. (To check) cat /etc/group.
+* gpasswd -a Nick skan : This command vuse to add new user in same group (-a) used to add single user.
+	      |      |
+	  (New user)(group)
+
+
+* gpasswd -m ajay,vijay skan : Here -m helps to add ultiple user at the same time in existing group.
+	(To check output) cat /etc/group : Here it will show all user that we had created till the time.
+* Ln -s : Softlink or shortcut. This softlink is use to create a shortcut of a file on desktop or somewhere
+	  on a machine. seems (Ln) here abbrevate as (link) & (-s) denote softlink.
+	syntax: Ln -s file1 soft file1 (We can give any name.)
+	      (Ln-Link, -s - softlink, file1-mainfile, soft file1 - softlinik created with soft file1 name).
+* Ln : This is hardlink (Alwasy used to create a backup of a file).
+ 	syntax: Ln file2 backup file2 {Here file2 backup created with the bame we given backup file2}.
+		|      |      |     |
+	    (Link)(Mainfile)(backup)(file)
+	lets understand all this with one more example-
+* cat >>file2 
+  "New india establishment"
+  cat file2 {Now if we will see then the new content "New india establishment" along with previous added data
+  will show here in backup file too. All data will reflect in both files main file as well as backup file.}
+
+* Tar : Tar file used to merge multiple file into single file(Primary moto is to merge the files).
+* tar -cvf dir1.tar dirx: 
+  (-c denote to create, v stands for -verbose, f stands forcefully, dir1.tar- outputfile dirx- mainfile).
+  (In above syntax main file is dirx & its sub files, directory will merge in dir1.tar)
+* gzip : (GNU zip) is a compressing tool, which is used to truncate the file size. by default original file
+  will be replaced by the compressed file ending with extension (.gz). Aim of command to compress file size.
+  syntax : gzip dirx.tar
+           Ls (list) 
+           dirx.tar.gz (.gz here represent zip status).
+* gunzip : On other hand to decompress the file we use gunzip command and our original file will be back.
+  syntax : gunzip dirx.tar.gz
+          Ls (List)
+          dirx.tar
+* In general, GZIP is much better compared to ZIP, In terms of compression, especially when compressing a huge
+  number of files. The common practice with GZIP, is to archive all the files into a single tarball before
+  compression. In ZIP files, the individual files are compressed and then added to the archive.
+* tar -xvf dirx.tar :if we want to remove .tar then use -xvf command to remove .tar from its name.
+  (-x denotes extract, v stands for verbrose, f stands forcefully, dirx.tar stands file name)
+
+* Wget : Non interactive network downloader in simple words it is used to download software package or file 
+         through link.
+  syntax: wget <url> - Url provided & then it will start downloading.
+  If network is slow and interupting on regular intervals than also its continuously trying to download the
+  package reason its so called powerfull command.
+
+* Head & tail : Both the head and the tail commands are members of the GNU coreutils package. 
+               They are, by default, installed in all Linux distributions. 
+	syntax: cat >file8
+		1
+ 		2
+		3
+		4   |
+		5   |
+		6   |
+		7   |-------> (Content of a file)
+		8   |
+		9   |
+		10  |
+		11	
+		12
+		13
+		14
+		15
+* head file8: As their names imply, the head command will output the first 10 lines of the file.
+* tail file8: The tail command will print the last 10 lines of the file.
+* sort : Means it will sort the file content on ascending order.
+	sytax: cat >>file10  (Here one file created with the name of file10)
+		Naman  |
+		vijay  -----> (Content of file10)
+		Ajay   |
+		drisha |
+* sort file10 : then it will show the content in ascending format with first letter consideration.
+		Ajay	|
+		drisha	|
+		Naman	|-----> (Output comes in ascending order format)
+		Vijay	|
+
+* netstat : Linux netstat command stands for Network statistics. It displays information 
+	    about different interface statistics, including open sockets, routing tables, 
+	    and connection information
+
+	syntax: netstat -a (To show both listening & non listening sockets)
+		netstat -at (To list all TCP ports)
+		netstat -au (List all UDP ports)
+		netstat -l (List only all listenting ports)
+		netstat -lt (List only all listening TCP ports)
+		netstat -lu : To list only the listening udp ports
+		netstat -lx : To list only the listening UNIX ports.
+		netstat -s : To list the statistics for all ports.
+		netstat -st(TCP) : To list the statistics for TCP ports.
+		netstat -su(UDP) : List the statistics for UDP ports
+		netstat -pt : To display the PID and program names
+		netstat -c : To print the netstat information continuously
+		netstat --verbose : To get the non-supportive address families in the system
+		netstat -r : To get the kernel routing information
+
+ACCESS MODE/ PERMISSIONS:
+==========================
+sset of permissions provides a number for that set.
+
+Number	Octal Permission Representation      				Ref
+0	No permission							---
+1	Execute permission						--x
+2	Write permission						-w-
+3	Execute and write permission: 1 (execute) + 2 (write) = 3	-wx
+4	Read permission							r--
+5	Read and execute permission: 4 (read) + 1 (execute) = 5		r-x
+6	Read and write permission: 4 (read) + 2 (write) = 6		rw-
+7	All permissions: 4 (read) + 2 (write) + 1 (execute) = 7		rwx
+
+COMMANDS:
+---------
+
+* chown − The chown command stands for "change owner" and is used to change the owner of a file/directory.
+	syntax : chown user file
+		|        |    |_______
+				      ^
+ 	(Change owner) (user name) (file or directory/name)
+* chmod : Used to chcange the access mode of a file.
+* chgrp − The chgrp command stands for "change group" and is used to change the group of a file/directory.
+	syntax : chgrp group filelist
+		   |      |         |
+	   (change group)(Group name) (file or directory list)
+NOTE − The super user, root, has the unrestricted capability to change the ownership of any file but 
+       normal users can change the ownership of only those files that they own.
+* chgrp: 
+                      ----------------------
+	For example:  |d | rwx | r_x | r_ _|
+                      ----------------------
+                       |     |     |     |
+               (Directory)(Owner)(group)(Others)
+	r = Denotes to 4
+	w = Denotes to 2
+	x = Denotes to 1
+	(rwx) = 4+2+1 = 7
+
+	syntax: mkdir dir1 (one directory created by the name of file1)
+		chmod 777dir1 (All permissions given to dir1 i.e. read,write ,execute)
+		ls -l 	(List all files)
+
+* Grep : Grep stands for "Global Regular Expressions Print" basically used to search a particular 
+	 keyword or name with in given file.
+	 grep used to search a single keyword or name with a declared file.
+	 syntax: grep nick file1
+		(Here nick is name or keyword that will search in whole file1)
+
+* grep -E: Its work like same as Egrep but processing quite slow comparable to egrep.
+
+* Egrep : "Extended Global Regular Expressions Print" command is a text processing tool 
+          that searches for patterns or regular expressions in a specified location. 
+          The tool provides the same output as grep -E , but works faster.
+	  
+ 	  In egrep, We can search for more than one strings at same time 
+	  for example : egrep "key1|key2|key3|key4"
+	  syntax : egrep "Nick|adam" csv1
+ 	  	   (egrep then "nick and adam" string will search in file csv).
+
+* head -5 file1 : Used to read top 5 lines of a file.
+* head -3 file1 : used to read top 3 lines of a file.
+* tail -5 file1 : used to read last 5 lines in a file.
+* locate csv1 : locate is used for obtaining instantaneous results, and it is an essential utility 
+	        when speed is a priority. It is only search in database rather to search whole filesystem.
+* wc : Word count used to count words in a line, byte and character count
+  	wc -l – Prints the number of lines in a file.
+  	wc -w – prints the number of words in a file.
+  	wc -c – Displays the count of bytes in a file.
+  	wc -m – prints the count of characters from a file.
+  	wc -L – prints only the length of the longest line in a file.
+* | : This pipeline used to combine two commands and redirect the output in to command2.
+	syntax: command1 | command2
+	* ; : semicolon also used to add commands one after another.
+	* && : Also combine two commands using & symbol between the two or many.
+
+* shred: The shred command helps to overwrite the data in place several times. This makes it 
+ 	 harder for third party software and hardware probing to recover the data. 
+	 That is why it's commonly used to securely remove data.
+	* shred -u file_name : Use the shred command helps to permanently delete a file which is unable to recover.
+	* shred --remove file_name
+	* shred -v stands for verbose and gives detailed output.
+	* shred -z replaces the final pass with zeros to hide shredding.
+	* shred -u removes the file after shredding. We don't need to remove file afterwards using 
+		   rm with this flag.
+	* shred -n changes the number of passes. We have set it to 5.
+
+* dmidecode and lscpu : Both command helps to check system architecture info in details.
+* cat file1 file2 >file3 : File1 and file2 merger or combined in file3.
+* file file1:  It is used to find out type of file
+* sort file1 : Used to sort the file content.
+* cat file1 | sort: Its also used to provide the same result sorting of content of file1
+* git bash : Used to access a linux server remotely from a windows machine.
+	* putty: It is also works the same way.
+	* cmd : Also used to access machine remotely.
+* command > file1 : This command used to store the output of a command in a file.
+* cron : cron used to automate any task or script. according to this we will provide a specific time
+	 at that time it will automatically relsease that set of code or script to perform a particular task.
+* crontab -l : Used to check scheduled jobs.
+* check /var/log/messages : Used to check if cron job didnt excute or worked.
+* httpd,sshd,chronyd : All becomes in daemon series which keep runing in background everytime.
+* systemctl status httpd: To check the status of that paritular httpd service is runing or not.
+*
+
