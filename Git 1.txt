@@ -1,0 +1,68 @@
+GIT Bisect: It is a Git command that helps you find the commit in a Git repository's 
+	    history where a particular issue or bug was introduced. It is a valuable 
+	    tool for identifying the commit that introduced a bug or regression in your codebase. 
+	    Here's how it works.
+
+Git bisect start : This is to start the git bisect.
+Git bisect bad : Will show all the bad commits those have bugs.
+Git bisect Good : will only show the good commits.
+git bisect reset : Helpful if want to exit from bisect or want to terminate the whole bisect process.
+
+
+Git restore --unstaged <filename>: This command helpful to unstaged the all added files from git(staging area).
+			 lets suppose if had commited all files and dont want to make few of them 
+			 commit into the local repo. so we use this to help us the restore those.
+Check Existing Remotes:
+-You can check the existing remote repositories associated with your Git repository using the following command:
+-
+-git remote -v
+
+The git push command is used to upload local repository changes to a remote repository. 
+It is an essential command in Git for sharing your work with others
+
+Push to a Default Remote Repository
+git push :To push the changes to the default remote repository (usually named "origin")
+
+Push to a Specific branch : To push the changes to a specific branch on the remote repo.
+git push <remote_name> <branch_name>
+	     | 		    |
+	(Repo name) 	(Branch Name or either default Master)
+
+For example, if you want to push your local changes from the "main" branch to the "main" branch on the "origin" remote:
+git push origin main
+
+Here, the origin is as default taken and main also a default 
+
+Push All branches : To Push all braches to remote repo.
+git push --all
+
+Force Push: In some cases, you might need to force push your changes to the remote repository. This should be used with caution, 
+as it overwrites the remote branch history.
+
+git push -f
+
+When there is a specific branch then:
+git push -f <remote_name> <branch_name>
+
+Pushing to a Different Remote Repository:
+If you have multiple remote repositories, you can specify the remote name and branch to push to a different remote
+
+git push <remote_name> <branch_name>
+
+For example, to push to a remote named "other" and the "main" branch:
+git push other main
+	   |	|
+    (repo name) (branch name default)
+
+Delete a Remote Branch: To delete a branch on the remote repository
+git push <remote_name> --delete <branch_name>
+
+For example, to delete a branch named "feature" on the "origin" remote
+
+git push origin --delete feature
+	   |		    |
+(origin is the remote repo) (feature is branch name)
+
+
+
+
