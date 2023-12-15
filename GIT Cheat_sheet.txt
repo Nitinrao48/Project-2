@@ -1,0 +1,22 @@
+git add/rm file_name (to update what will be commited)
+git restore file_name (to discard changes in working repo)
+
+git remote remove origin (to remove the origin from remote)
+
+ git checkout --track origin/master (to switch from one branch to another) helps in switching
+
+git checkout -b new_branch_name (same switching work)
+git switch branch_name (switching)
+
+git remote remove origin
+git remote add origin https://github.com/username/repository.git (both used to remove and readding with the github repo) 
+
+git fetch origin master (if resert remote repository or newly added after removing then fetching is essential to work on further)
+
+if fetch not works then:
+
+git rebase origin/master (git rebasing will done rest of the work)
+
+git push origin master (then try for push again )
+
+git pull --rebase origin master (This command fetches changes from the remote "master" branch, rebases your local changes, and pushes them back to the remote.)
