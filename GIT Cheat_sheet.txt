@@ -20,3 +20,9 @@ git rebase origin/master (git rebasing will done rest of the work)
 git push origin master (then try for push again )
 
 git pull --rebase origin master (This command fetches changes from the remote "master" branch, rebases your local changes, and pushes them back to the remote.)
+
+FOR ESTABLISHING A CONNECTION WITH NEW GITHUB REPO
+
+git remote add Project-2 https://github.com/Nitinrao48/Project-2.git (connectin established with new github repo)
+
+ git fetch Project-2 (Fetching with new repo)
